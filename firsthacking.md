@@ -1,4 +1,4 @@
-<p align="center">![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_001.png)</p>
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_001.png)
 
 nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 
