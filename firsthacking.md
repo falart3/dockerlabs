@@ -2,13 +2,12 @@
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_002.png)
 
 <h3>nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2</h3>
+<h1>Desglose del Comando</h1>
+<h4>nmap</h4>
+Esta herramienta se utilizando para realizar el escaneo de red, puertos y servicios.
 
-<center><h1>Desglose del Comando</h1></center>
-
-<h3>nmap</h3> Es la herramienta que estoy utilizando para realizar el escaneo de red y puertos.
-
--p-:
-  Este parámetro le indica a nmap que escanee todos los puertos posibles (del 1 al 65535). Si quisieras especificar un rango de puertos, podrías usar algo como -p 1-1000 para escanear solo los primeros 1000 puertos.
+<h4>-p-</h4>
+Este parámetro le indica a nmap que escanee todos los puertos posibles (del 1 al 65535). Si quisieras especificar un rango de puertos, podrías usar algo como -p 1-1000 para escanear solo los primeros 1000 puertos.
 
 -sS:
   Esta opción realiza un escaneo de puertos SYN, también conocido como escaneo "stealth" o sigiloso. nmap envía paquetes SYN a los puertos y espera respuestas. Este tipo de escaneo es menos probable que sea detectado por sistemas de detección de intrusiones en comparación con un escaneo TCP completo.
