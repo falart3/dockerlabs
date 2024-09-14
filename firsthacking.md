@@ -62,3 +62,30 @@ Archivo: 17491.rb es un script en Ruby que forma parte del framework Metasploit 
 CVE: CVE-2011-2523 es el identificador de la vulnerabilidad específica que el exploit aprovecha. Esta vulnerabilidad se relaciona con la puerta trasera en vsftpd 2.3.4.
 
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
+
+Ejecucion y Salida del Exploit
+
+Mensaje: /root/49757.py:11: DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13
+
+Este mensaje indica que el módulo telnetlib utilizado en el script de Python está en desuso y se eliminará en una versión futura de Python (3.13). Aunque esta advertencia no detiene la ejecución, es algo a tener en cuenta si planeas actualizar Python en el futuro.
+
+Mensaje: Success, shell opened
+
+El exploit se ha ejecutado con éxito y ha abierto una shell en el servidor objetivo.
+
+Comando Ejecutado:
+
+Comando: whoami
+Resultado: root
+
+El comando whoami muestra el usuario actual en la shell. En este caso, muestra root, lo que significa que has obtenido acceso como usuario root en el sistema objetivo.
+
+Mensaje Final:
+
+Mensaje: Send 'exit' to quit shell
+Descripción: Indica cómo salir de la shell abierta. Debes enviar el comando exit para cerrar la sesión de shell y terminar la conexión.
+
+<h4>Recomendaciones</h4>
+<h2>Seguridad y Ética:</h2>
+
+Pruebas en Entorno Controlado: Asegúrate de que todo el trabajo se realice en un entorno de pruebas autorizado y controlado. Ejecutar exploits en sistemas no autorizados es ilegal y poco ético.
