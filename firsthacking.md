@@ -2,8 +2,8 @@
 
 nmap -p- -sS -sCV -T4 -n -Pn <span style="color: red;">172.17.0.2</span>
 
-##Desglose del Comando
-nmap: Es la herramienta que estás utilizando para realizar el escaneo de red.
+<h1>Desglose del Comando</h1>
+nmap: Es la herramienta que estoy utilizando para realizar el escaneo de red y puertos.
 
 -p-: Este parámetro le indica a nmap que escanee todos los puertos posibles (del 1 al 65535). Si quisieras especificar un rango de puertos, podrías usar algo como -p 1-1000 para escanear solo los primeros 1000 puertos.
 
