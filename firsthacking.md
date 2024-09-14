@@ -39,5 +39,23 @@ ftp: El servicio en el puerto es FTP (File Transfer Protocol).
 vsftpd 2.3.4: La versión del servicio FTP detectado es vsftpd 2.3.4.
 
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_003.png)
+
+El comando searchsploit vsftpd 2.3.4 ha encontrado dos exploits.
+
+Exploit Title: vsftpd 2.3.4 - Backdoor Command Execution
+
+Path: unix/remote/49757.py
+
+Este exploit se refiere a una vulnerabilidad en vsftpd 2.3.4 que permite la ejecución remota de comandos a través de una puerta trasera. Esta vulnerabilidad es bien conocida y puede permitir a un atacante ejecutar comandos arbitrarios en el servidor FTP afectado.
+
+Archivo: 49757.py es un script en Python que explota esta vulnerabilidad. Puedes encontrar este exploit en el directorio unix/remote/ dentro de la base de datos de Exploit-DB.
+
+
+Path: unix/remote/17491.rb
+
+Similar al anterior, este exploit también explota la vulnerabilidad de puerta trasera en vsftpd 2.3.4, pero está diseñado específicamente para ser utilizado con Metasploit, una plataforma de pruebas de penetración muy popular.
+
+Archivo: 17491.rb es un script en Ruby que forma parte del framework Metasploit y está diseñado para explotar la vulnerabilidad en vsftpd 2.3.4. Se encuentra en el directorio unix/remote/.
+
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_004.png)
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
