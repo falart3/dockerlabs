@@ -58,4 +58,7 @@ Similar al anterior, este exploit también explota la vulnerabilidad de puerta t
 Archivo: 17491.rb es un script en Ruby que forma parte del framework Metasploit y está diseñado para explotar la vulnerabilidad en vsftpd 2.3.4. Se encuentra en el directorio unix/remote/.
 
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_004.png)
+
+CVE: CVE-2011-2523 es el identificador de la vulnerabilidad específica que el exploit aprovecha. Esta vulnerabilidad se relaciona con la puerta trasera en vsftpd 2.3.4.
+
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
