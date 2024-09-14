@@ -25,6 +25,13 @@ nmap: Esta herramienta se utiliza para realizar el escaneo de red, puertos y ser
 
 172.17.0.2: Es la dirección IP de dockerlabs.es que cargamos con bash auto_deploy.sh firsthacking.tar, es el objetivo que estamos escaneando.
 
+PORT STATE SERVICE VERSION:
+
+21/tcp open ftp vsftpd 2.3.4:
+21/tcp: El puerto 21 está abierto y usa el protocolo TCP.
+open: El puerto está abierto y aceptando conexiones.
+ftp: El servicio en el puerto es FTP (File Transfer Protocol).
+vsftpd 2.3.4: La versión del servicio FTP detectado es vsftpd 2.3.4.
 
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_003.png)
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_004.png)
