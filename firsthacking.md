@@ -26,7 +26,7 @@ nmap: Esta herramienta se utiliza para realizar el escaneo de red, puertos y ser
 
 172.17.0.2: Es la dirección IP de dockerlabs.es que cargamos con bash auto_deploy.sh firsthacking.tar, es el objetivo que estamos escaneando.
 
-PORT STATE SERVICE VERSION:
+<h3>PORT STATE SERVICE VERSION:</h3>
 
 21/tcp open ftp vsftpd 2.3.4:
 
@@ -63,7 +63,7 @@ CVE: CVE-2011-2523 es el identificador de la vulnerabilidad específica que el e
 
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
 
-Ejecucion y Salida del Exploit
+<h3>Ejecucion y Salida del Exploit</h3>
 
 Mensaje: /root/49757.py:11: DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13
 
@@ -86,6 +86,6 @@ Mensaje: Send 'exit' to quit shell
 Descripción: Indica cómo salir de la shell abierta. Debes enviar el comando exit para cerrar la sesión de shell y terminar la conexión.
 
 <h4>Recomendaciones</h4>
-<h2>Seguridad y Ética:</h2>
+<h1>Seguridad y Ética:</h1>
 
-Pruebas en Entorno Controlado: Asegúrate de que todo el trabajo se realice en un entorno de pruebas autorizado y controlado. Ejecutar exploits en sistemas no autorizados es ilegal y poco ético.
+Pruebas en Entorno Controlado: Asegúrate de que todo el trabajo se realice en un entorno de pruebas autorizado y controlado, como por ejemplo maquinas virtuales de dokerlabs. Ejecutar exploits en sistemas no autorizados es ilegal y poco ético.
