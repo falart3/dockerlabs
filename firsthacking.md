@@ -1,6 +1,7 @@
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_001.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_002.png)
 
-nmap -p- -sS -sCV -T4 -n -Pn <span style="color: red;">172.17.0.2</span>
+<h3>nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2</h3>
 
 <h1>Desglose del Comando</h1>
 nmap: Es la herramienta que estoy utilizando para realizar el escaneo de red y puertos.
@@ -21,7 +22,7 @@ nmap: Es la herramienta que estoy utilizando para realizar el escaneo de red y p
 
 172.17.0.2: Es la dirección IP del objetivo que estás escaneando. Reemplaza esta dirección con la IP del host o rango de hosts que desees investigar.
 
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_002.png)
+
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_003.png)
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_004.png)
 ![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
