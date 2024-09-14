@@ -73,9 +73,8 @@ Mensaje: Success, shell opened
 
 El exploit se ha ejecutado con éxito y ha abierto una shell en el servidor objetivo.
 
-Comando Ejecutado:
-
 Comando: whoami
+
 Resultado: root
 
 El comando whoami muestra el usuario actual en la shell. En este caso, muestra root, lo que significa que has obtenido acceso como usuario root en el sistema objetivo.
