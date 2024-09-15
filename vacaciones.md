@@ -5,6 +5,8 @@ Realizamos el escaneo con Nmap sobre la dirección IP 172.17.0.2 para revelar re
 ```
 nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 ```
+Si quieres ver un desglose del comando puedes ver [FirstHacking](https://github.com/falart3/dockerlabs/blob/main/firsthacking.md)
+
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_002.png)
 
 <h3>Análisis de los Servicios Abiertos</h3>
