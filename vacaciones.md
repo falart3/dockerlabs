@@ -5,7 +5,7 @@ Realizamos el escaneo con Nmap sobre la dirección IP 172.17.0.2 para revelar re
 ```
 nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 ```
-Si quieres ver un desglose del comando puedes ver [FirstHacking](https://github.com/falart3/dockerlabs/blob/main/firsthacking.md)
+Si quieres un desglose de este comando puedes ver [FirstHacking](https://github.com/falart3/dockerlabs/blob/main/firsthacking.md)
 
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_002.png)
 
@@ -21,8 +21,17 @@ HTTP (Puerto 80):<br>
 Lista a seguir:<br>
   investigar si existen vulnerabilidades para el puerto 22<br>
   investigar posibles exploits o revisar configuraciones incorrectas en el puerto 80<br>
-
+<br>
+Lo mas simple y rapido sera ver primero ver la ip en el puerto 80 http://172.17.0.2:80 <br>
+Pero tambien puedes utilizar curl para ver el codigo fuente del html en la consola. <br>
+<br>
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_0021.png)
+
+Como vemos hay un comentario en html (un mensaje oculto) que indica la presencia de una comunicación interna.<br>
+Esto puede ser interesante desde una perspectiva de enumeración de información.<br>
+Si bien Juan y Camilo son los nombres involucrados en la comunicacion, podemos usar esto pensando que quizas sean tambien nombres de usuarios.<br>
+Es decir que son dos posibilidades mas a parte de admin y root<br>
+
 
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_003.png)
 
