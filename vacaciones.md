@@ -31,9 +31,16 @@ Como vemos hay un comentario en html (un mensaje oculto) que indica la presencia
 Esto puede ser interesante desde una perspectiva de enumeración de información.<br>
 Si bien Juan y Camilo son los nombres involucrados en la comunicacion, podemos usar esto pensando que quizas sean tambien nombres de usuarios.<br>
 Es decir que son dos posibilidades mas a parte de admin y root<br>
-
+Antes de otros ataques mas profundos a los puertos 22 y 80, como busqueda de directorios o exploits.<br>
+Usaremos un ataque de fuerza bruta con hydra utilizando estos dos nuevos posibles usuarios.<br>
+```
+hydra -l juan -P /ruta/a/diccionario.txt ssh://172.17.0.2
+```
 
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_003.png)
+
+No hemos encontrado nada para este supuesto usuario "juan"<br>
+Ahora haremos lo mismo con el supuesto usuario "camilo"<br>
 
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_004.png)
 
