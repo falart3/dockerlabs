@@ -44,6 +44,21 @@ Ahora haremos lo mismo con el supuesto usuario "camilo"<br>
 
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_004.png)
 
+SI!<br>
+camilo es un nombre de usuario y probablemente juan tambien lo sea!<br>
+Hydra ha tenido éxito y ha encontrado la contraseña para el usuario Camilo en el servicio SSH del host 172.17.0.2. La credencial descubierta es:
+<br>
+Usuario: camilo<br>
+Contraseña: password1<br>
+<br>
+Conexión SSH:<br>
+Ahora puedemos usar estas credenciales para conectarnos al servidor SSH en 172.17.0.2.<br>
+Usaremos el siguiente comando para iniciar sesión:<br>
+```
+ssh camilo@172.17.0.2
+```
+Cuando se te solicite la contraseña, ingresamos password1.
+
 ![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_005.png)
 ```
 find / -name "*.txt" 2>/dev/null
