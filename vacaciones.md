@@ -10,7 +10,7 @@ nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 <h3>Análisis de los Servicios Abiertos</h3>
 SSH (Puerto 22):<br>
 La versión de OpenSSH detectada es relativamente antigua (7.6p1), lo que podría ser vulnerable si no está debidamente actualizada.
-
+<br>
 HTTP (Puerto 80):<br>
 El servidor web Apache 2.4.29 también es una versión que podría tener vulnerabilidades, ya que ha habido actualizaciones importantes desde entonces. 
 
