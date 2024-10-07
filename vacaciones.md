@@ -1,13 +1,13 @@
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_001.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_001.png)
 
 Realizamos el escaneo con Nmap sobre la dirección IP 172.17.0.2 para revelar resultados.
 ```
 nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 ```
-Si quieres un desglose de este comando puedes ver [FirstHacking](https://github.com/falart3/dockerlabs/blob/main/firsthacking.md)
+Si quieres un desglose de este comando puedes ver [FirstHacking](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/firsthacking.md)
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_002.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_002.png)
 
 <h3>Análisis de los Servicios Abiertos</h3>
 SSH (Puerto 22):<br>
@@ -25,7 +25,7 @@ Lista a seguir:<br>
 Lo mas simple y rapido sera ver primero ver la ip en el puerto 80 http://172.17.0.2:80 <br>
 Pero tambien puedes utilizar curl para ver el codigo fuente del html en la consola. <br>
 <br>
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_0021.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_0021.png)
 
 Como vemos hay un comentario en html (un mensaje oculto) que indica la presencia de una comunicación interna.<br>
 Esto puede ser interesante desde una perspectiva de enumeración de información.<br>
@@ -37,12 +37,12 @@ Usaremos un ataque de fuerza bruta con hydra utilizando estos dos nuevos posible
 hydra -l juan -P /ruta/a/diccionario.txt ssh://172.17.0.2
 ```
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_003.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_003.png)
 
 No hemos encontrado nada para este supuesto usuario "juan"<br>
 Ahora haremos lo mismo con el supuesto usuario "camilo"<br>
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_004.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_004.png)
 
 SI!<br>
 camilo es un nombre de usuario y probablemente juan tambien lo sea!<br>
@@ -59,7 +59,7 @@ ssh camilo@172.17.0.2
 ```
 Cuando se te solicite la contraseña, ingresamos password1.
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_005.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_005.png)
 
 Recordemos que en el archivo web encontramos un mensaje oculto sobre un "correo"<br>
 El comentario sugiere que puede haber información confidencial o relevante en algún archivo o servicio relacionado con correos electrónicos. Podemos buscar más información en directorios para ver si hay rutas ocultas, servicios adicionales disponibles omensajes.<br>
@@ -75,7 +75,7 @@ Esto especifica que estmos buscando archivos que terminen en .txt.<br>
 2>/dev/null :<br>
 Esto oculta los mensajes de error relacionados con la falta de permisos en algunos directorios.<br>
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_006.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_006.png)
 
 En el listado podemos ver dentro de estos directorios info relevante:<br>
 /var/mail/camilo/correo.txt<br>
@@ -85,13 +85,13 @@ Con la siguiente instruccion podemos ver que dice el texto<br>
 ```
 cat /var/mail/camilo/correo.txt
 ```
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_007.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_007.png)
 
 😮 😊<br>
 No solo podemos acceder con el usuario camilo, sino que ahora tambien con juan.<br>
 Dentro de este usuario intentaremos escalar a root 🤞 <br>
 
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_008.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_008.png)
 
 Parece que hemos logrado cambiar de usuario a Juan, pero no tenemos permisos para usar sudo su para escalar privilegios a root.<br>
 Sin embargo, hay varias estrategias que podríamos intentar en función de las vulnerabilidades del sistema y de los permisos disponibles.<br>
@@ -108,7 +108,7 @@ Utilizaremos el siguiente comando para iniciar un shell interactivo con permisos
 ```
 sudo /usr/bin/ruby -e 'exec "/bin/bash"'
 ```
-![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/vc_009.png)
+![Vacaciones](https://github.com/falart3/dockerlabs/blob/main/MF_Vacaciones/vc_009.png)
 
 Lo hemos conseguido! 🎉🥳🎊
 
