@@ -1,8 +1,8 @@
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_001.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/F_FirstHacking/fh_001.png)
 ```
 nmap -p- -sS -sCV -T4 -n -Pn 172.17.0.2
 ```
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_002.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/F_FirstHacking/fh_002.png)
 
 <h3>Desglose del Comando</h3>
 
@@ -38,7 +38,7 @@ ftp: El servicio en el puerto es FTP (File Transfer Protocol).
   
 vsftpd 2.3.4: La versión del servicio FTP detectado es vsftpd 2.3.4.
 
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_003.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/F_FirstHacking/fh_003.png)
 
 El comando searchsploit vsftpd 2.3.4 ha encontrado dos exploits.
 
@@ -57,11 +57,11 @@ Similar al anterior, este exploit también explota la vulnerabilidad de puerta t
 
 Archivo: 17491.rb es un script en Ruby que forma parte del framework Metasploit y está diseñado para explotar la vulnerabilidad en vsftpd 2.3.4. Se encuentra en el directorio unix/remote/.
 
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_004.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/F_FirstHacking/fh_004.png)
 
 CVE: CVE-2011-2523 es el identificador de la vulnerabilidad específica que el exploit aprovecha. Esta vulnerabilidad se relaciona con la puerta trasera en vsftpd 2.3.4.
 
-![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/fh_005.png)
+![FirstHacking](https://github.com/falart3/dockerlabs/blob/main/F_FirstHacking/fh_005.png)
 
 <h3>Ejecucion y Salida del Exploit</h3>
 
