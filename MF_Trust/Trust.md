@@ -8,8 +8,6 @@
 ![Trust](https://github.com/falart3/dockerlabs/blob/main/MF_Trust/t07.png)
 
 
-scripción: Indica cómo salir de la shell abierta. Debes enviar el comando exit para cerrar la sesión de shell y terminar la conexión.
-
 <h4>Recomendaciones</h4>
 <h1>Seguridad y Ética:</h1>
 
